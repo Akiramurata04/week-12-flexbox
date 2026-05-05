@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox</title>
+</head>
+<body>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      color: #e5e5e5;
+      background-color: #121212;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 24px;
+      border-bottom: 2px solid #e2231a;
+      background-color: #1c1c1c;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      color: #cccccc;
+      text-decoration: none;
+    }
+
+    .menu a:hover {
+      color: #ffffff;
+    }
+
+    .hero {
+      min-height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 24px;
+      border-bottom: 1px solid #333;
+      background: linear-gradient(135deg, #1c1c1c, #2a2a2a);
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 24px;
+    }
+
+    .card {
+      flex: 1 1 220px;
+      border: 1px solid #2a2a2a;
+      padding: 16px;
+      background-color: #1f1f1f;
+      border-radius: 8px;
+    }
+
+    .card-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+    }
+
+    button {
+      background-color: #e2231a;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ff3b30;
+    }
+
+    @media (max-width: 700px) {
+      .navbar {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <strong>Roblox Academy</strong>
+    <nav class="menu">
+      <a href="#">Home</a>
+      <a href="#">Games</a>
+      <a href="#">Create</a>
+      <a href="#">Avatar</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Explore Roblox Worlds</h1>
+      <p>Play, create, and share experiences with millions of players.</p>
+    </div>
+  </section>
+
+  <section class="cards">
+    <article class="card">
+      <h2>Adopt Me</h2>
+      <p>Raise pets, decorate your home, and trade with friends.</p>
+      <div class="card-actions">
+        <button>Play</button>
+      </div>
+    </article>
+
+    <article class="card">
+      <h2>Brookhaven</h2>
+      <p>Roleplay in a modern town with houses, cars, and friends.</p>
+      <div class="card-actions">
+        <button>Play</button>
+      </div>
+    </article>
+
+    <article class="card">
+      <h2>Obby Challenge</h2>
+      <p>Test your skills by completing fun and difficult obstacle courses.</p>
+      <div class="card-actions">
+        <button>Play</button>
+      </div>
+    </article>
+  </section>
+</body>
+</html>
